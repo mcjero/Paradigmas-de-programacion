@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Horario</title>
+	<meta charset="utf-8">
+	<script type="text/javascript"> 
+dia_de_la_semana=new Date();
+fecha=dia_de_la_semana.getDay()
+switch (fecha){
+case 1:
+document.write("Es Lunes y tienes clases de 2:00 pm a 7:00 pm")
+break
+case 2:
+document.write("Es Martes y tienes clases de 2:00 pm a 7:00 pm")
+break
+case 3:
+document.write("Es Miércoles y tienes clases de 2:00 pm a 8:00 pm")
+break
+case 4:
+document.write("Es Jueves y tienes clases de 2:00 pm a 9:00 pm")
+break
+case 5:
+document.write("Es viernes y tienes clases de 12:00 pm a 7:00 pm")
+break
+case 6:
+case 7:
+document.write("Es fin de semana y no tienes clases")
+break
+default:
+document.write("Ese día no existe")
+}
+	</script>
+</head>
+<body>
+ 
+</body>
+</html>
