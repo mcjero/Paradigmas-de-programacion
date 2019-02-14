@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<meta charset="utf-8">
+
+	<script type="text/javascript"> 
+		var num, acc = 0 , op = "";
+
+		function mas ()   { acc = num.value; op = "+"; }
+		function menos () { acc = num.value; op = "-"; }
+		function multi () { acc = num.value; op = "*"; }
+		function divic () { acc = num.value; op = "/"; }
+
+		function calcular () {
+			if (op === "+") {num.value = (+acc + +num.value)}
+			if (op === "-") {num.value = (+acc - +num.value)}
+			if (op === "*") {num.value = (+acc * +num.value)}
+			if (op === "/") {num.value = (+acc / +num.value)}
+		}
+
+	    function cuadrado () {
+		var num = document.getElementById('num');
+		num.value = num.value * num.value;
+	    }
+
+	    function inic () {num = document.getElementById("num");}
+	    function vaciar () {document.getElementById('num').value = "";}
+	</script>
+</head>
+<body onload="inic()">
+	 Programacion Funcional<p>
+     Numero:<p>
+	<input type="text" size="12" id="num" onclick="vaciar()"><p>
+	<button onclick="mas ()">+</button>
+	<button onclick="menos ()">-</button>
+	<button onclick="multi ()">*</button>
+	<button onclick="divic ()">/</button>
+	<button onclick="calcular ()">=</button>
+	<button onclick="cuadrado() ">x<sup>2</sup> </button>
+
+</body>
+</html>
